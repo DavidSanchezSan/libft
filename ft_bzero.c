@@ -1,0 +1,40 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dasanche <dasanche@student.42madrid.c      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/15 13:31:30 by dasanche          #+#    #+#             */
+/*   Updated: 2025/01/15 13:31:32 by dasanche         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include <stdio.h>
+
+/* Function that erases the data in the n bytes of the memory starting
+at the location pointed to by s, by writing zeros (bytes containing '\0')
+to that area: */
+
+void	ft_bzero(void *s, size_t n)
+{
+	size_t			x;
+	unsigned char	*ptr;
+
+	ptr = (unsigned char *)s;
+	x = 0;
+	while (x < n)
+	{
+		ptr[x] = '\0';
+		x++;
+	}
+}
+
+int	main(void)
+{
+    char str[50] = "Hola mundo";
+    printf("Antes de bzero: %s\n",str);
+    ft_bzero(str, 1);
+    printf("Después de bzero: %s\n", str);
+	printf("%lu", sizeof(str));
+    return (0);
+}
