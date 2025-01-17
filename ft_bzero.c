@@ -17,7 +17,7 @@ to that area: */
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t				x;
+	size_t			x;
 	unsigned char	*ptr;
 
 	ptr = (unsigned char *)s;

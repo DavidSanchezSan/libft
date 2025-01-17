@@ -18,7 +18,7 @@ int	ft_isascii(int c)
 /*
 int	main(void)
 {
-	printf("%d", ft_isascii('Á'));
+	printf("%d", ft_isascii('A'));
 	return (0);
 }
 */
