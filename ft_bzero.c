@@ -17,7 +17,7 @@ to that area: */
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t			x;
+	size_t				x;
 	unsigned char	*ptr;
 
 	ptr = (unsigned char *)s;
@@ -28,13 +28,16 @@ void	ft_bzero(void *s, size_t n)
 		x++;
 	}
 }
-
+/*
 int	main(void)
 {
     char str[50] = "Hola mundo";
     printf("Antes de bzero: %s\n",str);
-    ft_bzero(str, 1);
-    printf("Después de bzero: %s\n", str);
-	printf("%lu", sizeof(str));
+	printf("%llu\n", sizeof(str));
+    ft_bzero(str, 2);
+	printf("Despues de bzero: %s\n", str);
+    printf("Despues de bzero a partir del tercer caracter: %s\n", str+2);
+	printf("%llu", sizeof(str));
     return (0);
 }
+*/
