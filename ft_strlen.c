@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dasanche <dasanche@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:01:18 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/15 12:01:21 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/20 18:21:04 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 #include <stdio.h>
 

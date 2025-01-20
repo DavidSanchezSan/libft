@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dasanche <dasanche@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:25:48 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/15 12:25:50 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/20 17:16:18 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdio.h>
 #include <string.h>
 

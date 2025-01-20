@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dasanche <dasanche@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:24:44 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/14 11:24:57 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/20 18:21:02 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
@@ -23,9 +24,11 @@ size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
-// Voy por aquí:
+// Me falta el !src && !dest == return NULL:
 void	*ft_memmove(void *dest, const void *src, size_t n);
+// Me falta poder incluir la librería:
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+// Voy por aquí:
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
