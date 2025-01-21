@@ -1,28 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/15 11:39:08 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/21 16:36:07 by dasanche         ###   ########.fr       */
+/*   Created: 2025/01/21 16:26:34 by dasanche          #+#    #+#             */
+/*   Updated: 2025/01/21 16:37:04 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-// Function that checks if a character is printable
+// Function that returns the lower character
 
-int	ft_isprint(int c)
+int	ft_tolower(int c)
 {
-	return (c >= 32 && c <= 126);
+	if (c >= 65 && c <= 90)
+	{
+		return (c + 32);
+	}
+	else
+		return (c);
 }
 
 /*
 int	main(void)
 {
-	printf("%d", ft_isprint('1'));
-	return (0);
+	int	c;
+
+	c = 'A';
+	printf("%c",ft_tolower(c));
+	return(0);
 }
 */

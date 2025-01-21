@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:01:18 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/20 18:21:04 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/21 16:37:01 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdio.h>
 
 // Function that returns the length of a string
+
 size_t	ft_strlen(const char *s)
 {
 	size_t	x;

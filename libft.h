@@ -6,12 +6,13 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:24:44 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/20 18:21:02 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/21 16:30:41 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+// Preprocessor directives / guards.
 # include <stdlib.h>
 // Declaration of functions:
 
@@ -24,14 +25,12 @@ size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
-// Me falta el !src && !dest == return NULL:
 void	*ft_memmove(void *dest, const void *src, size_t n);
-// Me falta poder incluir la librería:
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
-// Voy por aquí:
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+// Voy por aquí:
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -42,5 +41,5 @@ int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 
-// Preprocessor directives / guards:
+// End of preprocessor directives / guards:
 #endif // LIBFT_H

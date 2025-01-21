@@ -1,28 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/15 11:39:08 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/21 16:36:07 by dasanche         ###   ########.fr       */
+/*   Created: 2025/01/21 16:34:43 by dasanche          #+#    #+#             */
+/*   Updated: 2025/01/21 18:01:23 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-// Function that checks if a character is printable
-
-int	ft_isprint(int c)
+// Function that returns a pointer to the matched character or NULL if the character is not found.
+char	*ft_strchr(const char *s, int c)
 {
-	return (c >= 32 && c <= 126);
+	int	x;
+
+	x = 0;
+	while (s != NULL)
+	{
+		if (s[x] == c)
+			return (char *)s;
+		else if (c == '\0')
+			return (char *)s;
+		x++;
+		s++;
+	}
+	return (NULL);
 }
 
-/*
 int	main(void)
 {
-	printf("%d", ft_isprint('1'));
+	const char	s[50] = "Hola mundo";
+	printf("Antes de strchr: %s\n", s);
+	ft_strchr(s, 'l');
+	printf("Despues de strchr: %s", s);
 	return (0);
 }
-*/

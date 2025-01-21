@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 18:02:43 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/20 17:16:57 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/21 15:28:42 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	ptr_dest = (unsigned char *)dest;
 	ptr_src = (unsigned char *)src;
 	x = 0;
-	if (dest <= src)
-	{
-		while (x < n)
-		{
-			ptr_dest[x] = ptr_src[x];
-			x++;
-		}
-	}
+	if (!dest && !src)
+		return (NULL);
+	else if (dest <= src)
+		ft_memcpy(ptr_dest, ptr_src, n);
 	else if (dest > src)
 	{
 		x = n;
@@ -42,22 +38,20 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			ptr_dest[x] = ptr_src[x];
 		}
 	}
-    else if (!dest && !src)
-        return (NULL);
 	return (ptr_dest);
 }
 /*
 int	main(void)
 {
-	char	src[50] = "Supercalifragiliticoespialidoso";
-	char	src2[50] = "Supercalifragiliticoespialidoso";
+	char	src[50] = "Hola mundo";
+	char	src2[50] = "Adios planeta";
 
 	printf("Antes de ft_memmove: %s\n", src);
-	ft_memmove(&src[3], src, 10);
+	ft_memmove(&src[3], src, 5);
 	printf("Después de ft_memmove: %s\n", src);
-	printf("Antes de memmove: %s\n", src2);
-	memmove(&src2[3], src2, 10);
-	printf("Después de memmove: %s\n", src2);
+	//printf("Antes de memmove: %s\n", src2);
+	//memmove(&src2[3], src2, 10);
+	//printf("Después de memmove: %s\n", src2);
 	return (0);
 }
 */

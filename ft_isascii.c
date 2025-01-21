@@ -6,11 +6,14 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 11:25:42 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/20 17:16:25 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/21 16:36:41 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 // Function that checks if a character is an ASCII character
+
 int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);

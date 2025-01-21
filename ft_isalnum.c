@@ -6,11 +6,14 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 15:19:15 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/20 17:16:28 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/21 16:36:32 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 // Function that checks if a character is alphanumeric
+
 int	ft_isalnum(int c)
 {
 	return (((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) || (c >= 48

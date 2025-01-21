@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 13:31:30 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/20 17:16:29 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/21 17:06:37 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,15 @@ void	ft_bzero(void *s, size_t n)
 		x++;
 	}
 }
+
 /*
 int	main(void)
 {
-    char str[50] = "Hola mundo";
+    char str[25] = "Hola mundo";
     printf("Antes de bzero: %s\n",str);
-	printf("%llu\n", sizeof(str));
     ft_bzero(str, 2);
 	printf("Despues de bzero: %s\n", str);
     printf("Despues de bzero a partir del tercer caracter: %s\n", str+2);
-	printf("%llu", sizeof(str));
     return (0);
 }
 */
