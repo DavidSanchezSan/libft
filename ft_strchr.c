@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 16:34:43 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/22 14:13:12 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/22 15:22:10 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,7 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-/*
-int	main(void)
+/* int	main(void)
 {
 	const char	s[50] = "Hola mundo";
 	printf("Antes de strchr: %s\n", s);

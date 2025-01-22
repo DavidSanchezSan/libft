@@ -1,36 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/21 15:29:42 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/22 15:20:45 by dasanche         ###   ########.fr       */
+/*   Created: 2025/01/22 15:45:26 by dasanche          #+#    #+#             */
+/*   Updated: 2025/01/22 15:49:46 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-// Function that returns the upper character
+// Function that locates the first occurrence of the null-terminated string little 
+// in the string big, where not more than len characters are searched.  Characters 
+// that appear after a ‘\0’ character are not searched.
 
-int	ft_toupper(int c)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	if (c >= 97 && c <= 122)
-	{
-		return (c - 32);
-	}
-	else
-		return (c);
+	
 }
-
-/*
-int	main(void)
-{
-	int	c;
-
-	c = 'b';
-	printf("%c",ft_toupper(c));
-	return(0);
-}
-*/
