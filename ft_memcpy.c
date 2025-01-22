@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:23:30 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/20 17:16:20 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/22 14:32:49 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,6 @@ int main()
     char str2[] = "mundo";
 
     printf("Antes de memcpy: %s\n",str1);
-
-    // Copies contents of str2 to str1
-    memcpy(str1, str2, 4);
 
     printf("Despues de memcpy: %s\n",str1);
 

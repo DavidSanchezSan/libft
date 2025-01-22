@@ -1,36 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/21 15:29:42 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/22 14:48:12 by dasanche         ###   ########.fr       */
+/*   Created: 2025/01/22 14:06:01 by dasanche          #+#    #+#             */
+/*   Updated: 2025/01/22 14:33:01 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <string.h>
 
-// Function that returns the upper character
+// Function that compares only the first (at most) n bytes of s1 and s2.
 
-int	ft_toupper(int c)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	if (c >= 97 && c <= 122)
+	size_t	x;
+
+	x = 0;
+	while (x <= n)
 	{
-		return (c - 32);
+		if (s1[x] != s2[x])
+			return (s1[x] - s2[x]);
+		x++;
 	}
-	else
-		return (c);
+	return (0);
 }
 
-/*
-int	main(void)
+/* int	main (void)
 {
-	int	c;
+	char s1[50] = "Hola mundo";
+	char s2[50] = "Hola aundo";
 
-	c = 'b';
-	printf("%c",ft_toupper(c));
-	return(0);
-}
-*/
+	printf("%d\n",ft_strncmp(s1, s2, 6));
+	printf("%d",strncmp(s1, s2, 6));
+	return (0);
+} */
