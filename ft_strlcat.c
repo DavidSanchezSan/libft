@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 10:48:40 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/21 15:32:21 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/24 13:15:17 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	x;
-	int		len_dst;
+	size_t		len_dst;
 
 	len_dst = ft_strlen(dst);
 	x = len_dst;
