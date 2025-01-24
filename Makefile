@@ -1,7 +1,9 @@
-#Alias for the makefile:
-NAME = libft.a #Definition of the name of the static library
-CC = cc #Compiler to be used (cc)
-CFLAGS = -Wall -Wextra -Werror #The three walls we use
+#	Alias for the makefile:
+NAME	=	libft.a
+#Definition of the name of the static library
+CC		=	cc #Compiler to be used (cc)
+CFLAGS	=	-Wall -Wextra -Werror #The three walls we use
+
 # All .c files in the current directory
 SRC = ft_bzero.c \
 	  ft_isalnum.c \
@@ -22,7 +24,8 @@ SRC = ft_bzero.c \
 	  ft_strnstr.c \
 	  ft_strrchr.c \
 	  ft_tolower.c \
-	  ft_toupper.c 
+	  ft_toupper.c
+
 OBJ = $(SRC:.c=.o)  #object files (generated in the compilation)
 
 # "All" as the default target to build the library:
@@ -30,7 +33,7 @@ all: $(NAME)
 
 #Rules to create a static library:
 $(NAME): $(OBJ)
-	ar rcs $@ $^
+	ar -rcs $@ $^
 
 # ar rcs $@ $^ is the command to create the static library.
 # r: Insert object files into the archive.
@@ -51,7 +54,7 @@ clean:
 
 #Clean all the generated files:
 fclean: clean
-	 $(RM) $(NAME)
+	$(RM) $(NAME)
 
 #Clean all the generated files and then compile the project:
 re: fclean all
