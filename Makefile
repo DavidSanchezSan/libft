@@ -5,7 +5,8 @@ CC		=	cc #Compiler to be used (cc)
 CFLAGS	=	-Wall -Wextra -Werror #The three walls we use
 
 # All .c files in the current directory
-SRC = ft_bzero.c \
+SRC = ft_atoi.c \
+	  ft_bzero.c \
 	  ft_isalnum.c \
 	  ft_isalpha.c \
 	  ft_isascii.c \
