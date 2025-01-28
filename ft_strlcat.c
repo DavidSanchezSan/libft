@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 10:48:40 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:18 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/28 15:42:42 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,29 +20,32 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t		x;
 	size_t		len_dst;
+	size_t		len_src;
 
 	len_dst = ft_strlen(dst);
+	len_src = ft_strlen(src);
 	x = len_dst;
 	if (size <= len_dst)
 		return (size + ft_strlen(src));
 	else
 	{
-		while (x < size - 1)
+		while (x < size - 1 && *src)
 		{
-			dst[x] = src[x - len_dst];
+			dst[x] = *src;
 			x++;
+			src++;
 		}
 		dst[x] = '\0';
-		return (ft_strlen(src) + len_dst);
+		return (len_src + len_dst);
 	}
 }
 /*
 int	main(void)
 {
 	char	dst[50] = "Hola";
-	const char	src[50] = "";
+	const char	src[50] = "CCCCCAAAAAAAAA";
 
-	printf("%zu\n", ft_strlcat(dst, src, 15));
+	printf("%zu\n", ft_strlcat(dst, src, -1));
 	printf("%s\n", dst);
 }
 */

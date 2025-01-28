@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 16:34:43 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:15 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/28 15:59:55 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,23 +18,27 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+	char	a;
+
+	a = (char)c;
 	while (*s != '\0')
 	{
-		if (*s == c)
+		if (*s == a)
 			return ((char *)s);
 		s++;
 	}
-	if (c == '\0')
+	if (a == '\0')
 		return ((char *)s);
 	return (NULL);
 }
-
-/* int	main(void)
+/*
+int	main(void)
 {
-	const char	s[50] = "Hola mundo";
+	const char	s[] = "tripouille";
 	printf("Antes de strchr: %s\n", s);
-	printf("Despues de strchr: %s\n", ft_strchr(s, 'l'));
+	printf("Despues de strchr: %s\n", ft_strchr(s, 't' + 256));
 	printf("Antes de strchr: %s\n", s);
-	printf("Despues de strchr: %s", strchr(s, 'l'));
+	printf("Despues de strchr: %s", strchr(s, 't' + 256));
 	return (0);
-} */
+}
+*/
