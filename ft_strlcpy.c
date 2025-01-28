@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 17:05:24 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/24 16:40:28 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/28 13:46:19 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,22 +26,22 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		return (ft_strlen(src));
 	else
 	{
-		while (x < size - 1)
+		while (x < size - 1 && (src[x] != '\0'))
 		{
 			dst[x] = src[x];
 			x++;
 		}
-		dst[size] = '\0';
+		dst[x] = '\0';
 		return (ft_strlen(src));
 	}
 }
 /*
 int	main(void)
 {
-	char	src[50] = "Hola mundo";
-	char	dst[50];
+	char	src[50] = "rrrrr";
+	char	dst[50] = "";
 
-	printf("%zu\n", ft_strlcpy(dst, src, 1));
+	printf("%zu\n", ft_strlcpy(dst, src, 15));
 	printf("%s", dst);
 	return (0);
 }

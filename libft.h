@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:24:44 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/24 11:45:30 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/28 13:46:34 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
-void	*ft_calloc(size_t nmemb, size_t size); // Revisar el header y formato norminette
-char	*ft_strdup(const char *s); // Revisar el header y formato norminette
+void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(const char *s);
 
 // End of preprocessor directives / guards:
 #endif // LIBFT_H

@@ -6,8 +6,8 @@ CFLAGS	=	-Wall -Wextra -Werror #The three walls we use
 
 # All .c files in the current directory
 SRC = ft_atoi.c \
-	  ft_calloc.c \
 	  ft_bzero.c \
+	  ft_calloc.c \
 	  ft_isalnum.c \
 	  ft_isalpha.c \
 	  ft_isascii.c \
@@ -42,7 +42,7 @@ $(NAME): $(OBJ)
 # r: Insert object files into the archive.
 # c: Create the archive if it doesn’t already exist.
 # s: Create an index for the library (optional, but helps with linking).
-# $@ refers to the target (libmylibrary.a), and $^ refers to the list of object files ($(OBJ)).
+# $@ refers to the target (libft.a), and $^ refers to the list of object files ($(OBJ)).
 
 #Compile .c into .o
 %.o: %.c
@@ -63,7 +63,7 @@ fclean: clean
 re: fclean all
 
 #default rule:
-#.PHONY: all clean fclean re
+.PHONY: all clean fclean re
 #We use PHONY to ensure that make ALWAYS execute the rules, even if there are files called clean, fclean or re.
 
 #The command to create the library will be make.

@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 10:48:40 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/24 16:28:55 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/28 13:46:18 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 int	main(void)
 {
 	char	dst[50] = "Hola";
-	const char	src[50] = "mundo";
+	const char	src[50] = "";
 
-	printf("%zu\n", ft_strlcat(dst, src, 20));
+	printf("%zu\n", ft_strlcat(dst, src, 15));
 	printf("%s\n", dst);
 }
 */

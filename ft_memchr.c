@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 14:30:50 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/22 15:43:57 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/28 13:46:07 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	x = 0;
 	while (x < n)
 	{
-		if (ptr_s[x] == c)
-			return ((void *)&ptr_s[x]);
+		if (ptr_s[x] == (unsigned char)c)
+			return (ptr_s + x);
 		x++;
 	}
 	return (NULL);
@@ -42,4 +42,13 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	printf("%p\n",ft_memchr(s, c, 10));
 	printf("%p",memchr(s, c, 10));
 	return (0);
-} */
+}
+*/
+/*
+int main()
+{
+    int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
+    printf("%s", (char *)ft_memchr(tab, -1, 7 * sizeof(int)));
+    return 0;
+}
+*/

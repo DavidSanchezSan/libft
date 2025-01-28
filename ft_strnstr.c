@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:45:26 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/24 11:45:39 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/28 13:46:25 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		if (big[i] == little[j])
 		{
 			z = i;
-			while (big[z++] == little[j] && little[j++] != '\0')
+			while (big[z++] == little[j] && little[j++] != '\0' && z < len)
 			{
 				if (little[j] == '\0')
 					return ((char *)&big[i]);
@@ -47,13 +47,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 /*
 int	main(void)
 {
-	const char	*big = "FoBBo Bar Baz";
-	const char	*little = "Bo";
+	const char	*big = "lorem ipsum dolor sit amet";
+	const char	*little = "dolor";
 	char		*ptr;
 
-	ptr = ft_strnstr (big, little, 12);
+	ptr = ft_strnstr (big, little, 15);
 	printf("%s\n", ptr);
-	printf("%s\n", strnstr(big, little, 12));
+	printf("%s\n", strnstr(big, little, 15));
 	return (0);
 }
 */

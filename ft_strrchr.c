@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 12:21:40 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/24 11:29:24 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/28 13:46:27 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,27 +18,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	x;
+	const char	*last;
 
-	x = 1;
+	last = NULL;
 	while (*s != '\0')
 	{
+		if (*s == (char)c)
+			last = s;
 		s++;
-		x++;
-		if (*s == '\0')
-		{
-			while (x != 0)
-			{
-				if (*s == c)
-					return ((char *)s);
-				s--;
-				x--;
-			}
-		}
 	}
 	if (c == '\0')
 		return ((char *)s);
-	return (NULL);
+	return ((char *)last);
 }
 /*
 int	main(void)

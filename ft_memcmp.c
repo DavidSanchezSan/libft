@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:24:28 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/22 15:44:13 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/28 13:46:09 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	ptr_s1 = (unsigned char *)s1;
 	ptr_s2 = (unsigned char *)s2;
 	x = 0;
-	while (x <= n)
+	while (x < n)
 	{
 		if (ptr_s1[x] != ptr_s2[x])
 			return (ptr_s1[x] - ptr_s2[x]);
@@ -33,13 +33,14 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/* int	main (void)
+/*
+int	main (void)
 {
-	char s1[50] = "Hola mundo";
-	char s2[50] = "Hola aundo";
+	char s1[50] = "abcdefghij";
+	char s2[50] = "abcdefgxyz";
 
-	printf("%d\n",ft_memcmp(s1, s2, 0));
-	printf("%d",memcmp(s1, s2, 0));
+	printf("%d\n",ft_memcmp(s1, s2, 7));
+	printf("%d",memcmp(s1, s2, 7));
 	return (0);
-} */
+}
+*/
