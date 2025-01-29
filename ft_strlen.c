@@ -6,12 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:01:18 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:20 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:26:10 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 // Function that returns the length of a string
 

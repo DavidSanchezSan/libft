@@ -6,13 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 10:48:40 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 15:42:42 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:26:36 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 // Function that copies and concatenate strings respectively.
 

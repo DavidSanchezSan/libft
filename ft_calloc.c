@@ -6,14 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 10:14:41 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:45:58 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:27:44 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 // Function that allocates memory for an array of nmemb elements of
 // size bytes each and returns a pointer to the allocated memory.

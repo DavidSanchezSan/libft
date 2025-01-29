@@ -6,12 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:45:26 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 17:08:43 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 15:38:44 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <bsd/string.h>
-#include <stdio.h>
+#include "libft.h"
 
 // Function that locates the first occurrence of the null-terminated
 // string little in the string big,
@@ -33,7 +32,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		if (big[i] == little[j])
 		{
 			z = i;
-			while (big[z++] == little[j] && little[j++] != '\0' && z < len)
+			while (big[z] == little[j] && little[j++]
+				!= '\0' && big[z] != '\0' && z++ < len)
 			{
 				if (little[j] == '\0')
 					return ((char *)&big[i]);
@@ -44,16 +44,15 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	const char	*big = "";
-	const char	*little = "coucou";
-	char		*ptr;
 
-	ptr = ft_strnstr (big, little, 5);
-	printf("%s\n", ptr);
-	printf("%s\n", strnstr(big, little, 5));
-	return (0);
-}
-*/
+// int	main(void)
+// {
+// 	const char	*big = "aaabcabcd";
+// 	const char	*little = "aaabc";
+// 	char		*ptr;
+
+// 	ptr = ft_strnstr (big, little, 5);
+// 	printf("%s\n", ptr);
+// 	printf("%s\n", strnstr(big, little, 5));
+// 	return (0);
+// }

@@ -6,12 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 16:34:43 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 15:59:55 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:26:49 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 // Function that returns a pointer to the first matched character
 // or NULL if the character is not found.

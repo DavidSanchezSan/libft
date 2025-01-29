@@ -6,11 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 14:57:56 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:04 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:27:26 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 // Function that checks if a character is a digit
 

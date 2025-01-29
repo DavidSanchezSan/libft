@@ -6,13 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 17:05:24 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:19 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:26:16 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 // Function that copies up to size - 1 characters from the
 // NUL-terminated string src to dst, NUL-terminating the result.

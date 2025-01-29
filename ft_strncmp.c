@@ -6,12 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 14:06:01 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 15:20:38 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 15:38:22 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 // Function that compares only the first (at most) n bytes of s1 and s2.
 
@@ -24,6 +23,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	{
 		if ((unsigned char)s1[x] != (unsigned char)s2[x])
 			return ((unsigned char)s1[x] - (unsigned char)s2[x]);
+		if (s1[x] == '\0' || s2[x] == '\0')
+			break ;
 		x++;
 	}
 	return (0);

@@ -6,12 +6,10 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 18:02:43 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:12 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:27:03 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
 // Function that copies a block of memory from a location to another.

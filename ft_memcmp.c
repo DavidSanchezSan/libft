@@ -6,12 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:24:28 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:09 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:27:12 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 // Function that compares the first n bytes (each interpreted 
 // as unsigned char) of the memory areas s1 and s2.

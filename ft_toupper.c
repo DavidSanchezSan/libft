@@ -6,11 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:29:42 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:36 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:24:49 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 // Function that returns the upper character
 

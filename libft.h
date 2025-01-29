@@ -6,14 +6,17 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:24:44 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:34 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 15:35:24 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-// Preprocessor directives / guards.
+# include <stdio.h>
 # include <stdlib.h>
+# include <string.h>
+# include <unistd.h>
+# include <bsd/string.h>
 // Declaration of functions:
 
 int		ft_isalpha(int c);

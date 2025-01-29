@@ -6,14 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 10:19:56 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:16 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:26:38 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 // Function that returns a pointer to a new
 // string which is a duplicate of the string s.

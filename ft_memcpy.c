@@ -6,12 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:23:30 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:10 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 15:37:07 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 // Function that copies n bytes of memory location to another memory location.
 
@@ -24,6 +23,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	ptr_dest = (unsigned char *)dest;
 	ptr_src = (unsigned char *)src;
 	x = 0;
+	if (src == dest)
+		return (dest);
 	while (x < n)
 	{
 		ptr_dest[x] = ptr_src[x];
@@ -31,16 +32,16 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (ptr_dest);
 }
-/*
-int main()
-{
-    char str1[] = "Hola ";
-    char str2[] = "mundo";
 
-    printf("Antes de memcpy: %s\n",str1);
+// int main()
+// {
+//     char str1[] = "";
+//     char str2[] = "";
 
-    printf("Despues de memcpy: %s\n",str1);
+//     printf("Antes de memcpy: %s\n",str1);
+// 	ft_memcpy(str1, str2, 3);
+//     printf("Despues de memcpy: %s\n",str1);
 
-    return 0;
-}
-*/
+//     return 0;
+// }
+// if (src == dest) Done because of Paco.

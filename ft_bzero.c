@@ -6,11 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 13:31:30 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:45:57 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:27:48 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 /* Function that erases the data in the n bytes of the memory starting
 at the location pointed to by s, by writing zeros (bytes containing '\0')

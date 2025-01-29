@@ -6,12 +6,11 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:25:48 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/28 13:46:14 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:26:57 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 // Function that fills the first n bytes of the memory area pointed to
 // by s with the constant byte c:
