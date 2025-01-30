@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 12:21:40 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/29 17:12:33 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/30 10:25:51 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,22 +22,29 @@ char	*ft_strrchr(const char *s, int c)
 	last = NULL;
 	while (*s != '\0')
 	{
-		if (*s == (char)c)
+		if (*s == (unsigned char)c)
 			last = s;
 		s++;
 	}
-	if (c == '\0')
-		return ((char *)s);
-	return ((char *)last);
+	if (*s == '\0')
+	{
+		if ((unsigned char)c == '\0')
+		{
+			last = s;
+			return ((char *)last);
+		}
+		return ((char *)last);
+	}
+	return (NULL);
 }
 
-int	main(void)
-{
-	const char	s[50] = "teste";
+// int	main(void)
+// {
+// 	const char	s[50] = "teste";
 
-	printf("Antes de strrchr: %s\n", s);
-	printf("Despues de strrchr: %s\n", ft_strrchr(s, 1024));
-	printf("Antes de strrchr: %s\n", s);
-	printf("Despues de strrchr: %s", strrchr(s, 1024));
-	return (0);
-}
+// 	printf("Antes de strrchr: %s\n", s);
+// 	printf("Despues de strrchr: %s\n", ft_strrchr(s, 1024));
+// 	printf("Antes de strrchr: %s\n", s);
+// 	printf("Despues de strrchr: %s", strrchr(s, 1024));
+// 	return (0);
+// }

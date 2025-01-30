@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/15 11:39:08 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 10:25:29 by dasanche         ###   ########.fr       */
+/*   Created: 2025/01/30 12:51:44 by dasanche          #+#    #+#             */
+/*   Updated: 2025/01/30 12:54:54 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Function that checks if a character is printable
+//Function that sends the string ‘s’ to the specified file descriptor.
 
-int	ft_isprint(int c)
+void	ft_putstr_fd(char *s, int fd)
 {
-	return (c >= 32 && c <= 126);
+	int	count;
+
+	count = 0;
+	while (s[count] != '\0')
+	{
+		write (fd, &s[count], 1);
+		count++;
+	}
 }
 
-/*
-int	main(void)
-{
-	printf("%d", ft_isprint('1'));
-	return (0);
-}
-*/
+// int	main(void)
+// {
+// 	char str[] = "user_exe";
+// 	ft_putstr_fd(str, 1);
+// 	return (0);
+// }

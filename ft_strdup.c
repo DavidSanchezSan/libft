@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 10:19:56 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/29 14:26:38 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/30 12:06:32 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,26 @@ char	*ft_strdup(const char *s)
 	ft_strlcpy(copy, s, len + 1);
 	return (copy);
 }
+/*
+int main() {
+    const char *original = "Hello, world!";
+    char *duplicate;
+
+    // Create a duplicate of the original string using ft_strdup
+    duplicate = ft_strdup(original);
+
+    if (duplicate == NULL) {
+        printf("Memory allocation failed!\n");
+        return 1;
+    }
+
+    // Print both the original and duplicated strings
+    printf("Original: %s\n", original);
+    printf("Duplicate: %s\n", duplicate);
+
+    // Free the allocated memory for the duplicate string
+    free(duplicate);
+
+    return 0;
+}
+*/

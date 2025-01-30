@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 10:14:41 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/29 14:27:44 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/30 11:16:20 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 }
 /*
 int	main(void) {
-	// 1. Normal allocation (5 integers)
+	// Normal allocation (5 integers)
 	size_t num_elements = 5;
 	size_t size_of_element = sizeof(int);
 	int *arr = (int *)calloc(num_elements, size_of_element);
