@@ -6,22 +6,13 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:11:22 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 16:04:57 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/31 11:39:15 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 //Function that sends the number 'n' to the specified file descriptor.
-
-// static void	ft_putdigit_fd(int nb, int fd)
-// {
-// 	char x;
-	
-// 	x = nb + '0';
-// 	write(fd, &x, 1);
-// }
-
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -45,7 +36,6 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, &c, 1);
 	}
 }
-
 
 // int	main(void)
 // {

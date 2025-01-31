@@ -6,14 +6,14 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 17:05:24 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 10:25:46 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/31 14:40:05 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 // Function that copies up to size - 1 characters from the
-// NUL-terminated string src to dst, NUL-terminating the result.
+// NULL-terminated string src to dst, NULL-terminating the result.
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

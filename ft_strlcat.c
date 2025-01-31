@@ -6,13 +6,13 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 10:48:40 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 14:34:50 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/31 15:18:26 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Function that copies and concatenate strings respectively.
+// Function that concatenate strings.
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
