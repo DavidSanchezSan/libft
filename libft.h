@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:24:44 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/31 18:33:21 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/31 20:12:43 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,8 @@ char	*ft_strtrim(char const *s1, char const *set);
 // char	**ft_split(char const *s, char c);
 // char	*ft_itoa(int n);
 // Voy por aquí
-char	*ft_strmapi(char const *s, char (*f) (unsigned int, char));
-// void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+// char	*ft_strmapi(char const *s, char (*f) (unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*)); //Hecha
 void	ft_putchar_fd(char c, int fd); //Hecha
 void	ft_putstr_fd(char *s, int fd); //Hecha
 void	ft_putendl_fd(char *s, int fd); //Hecha

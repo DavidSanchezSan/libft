@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 16:37:26 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/31 19:04:25 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/01/31 20:19:24 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 // int	main(void)
 // {
 // 	const char *s1 = "BABAholaBABA";
-// 	char *set = "BA";
+// 	const char *set = "BA";
 // 	printf("String antes de strtrim: %s\n", s1);
 // 	char *a = ft_strtrim(s1, set);
 // 	printf("String tras strtrim: %s", a);
