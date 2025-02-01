@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 19:21:29 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/31 20:19:09 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 15:16:16 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		x++;
 	}
 }
-// // Una función de ejemplo que se pasa a ft_striteri
-// void print_index_char(unsigned int index, char *c)
+
+// void	ft_toupper_test(unsigned int c, char *ch)
 // {
-//     printf("Índice: %u, Carácter: %c\n", index, *c);
+// 	if (c % 2 == 0 && *ch >= 'a' && *ch <= 'z')
+// 	{
+// 		*ch = *ch - 32;
+// 	}
 // }
 
-// int main()
+// int	main(void)
 // {
-//     char str[] = "Hola Mundo";
-//     ft_striteri(str, print_index_char);
-//     return (0);
+// 	char str[] = "hola mundo";
+// 	ft_striteri(str, ft_toupper_test);
+// 	printf("%s", str);
+// 	return (0);
 // }

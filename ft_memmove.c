@@ -6,13 +6,16 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 18:02:43 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 12:45:50 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 15:13:00 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Function that copies a block of memory from a location to another.
+// Function that copies n bytes from memory area src to memory area dest.
+// The memory areas may overlap: copying takes place as though the bytes in src
+// are first copied into a temporary array that does not overlap src or dest
+// and the bytes are then copied from the temporary array to dest.
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

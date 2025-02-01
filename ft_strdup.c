@@ -6,16 +6,15 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 10:19:56 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/31 20:12:40 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 15:16:11 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Function that returns a pointer to a new
-// string which is a duplicate of the string s.
-// Memory for the new string is obtained with
-// malloc(3), and can be freed with free(3).
+// Function function returns a pointer to a new string which is a duplicate of
+// the string s.  Memory for the new string is obtained with malloc, and can
+// be freed with free.
 
 char	*ft_strdup(const char *s)
 {

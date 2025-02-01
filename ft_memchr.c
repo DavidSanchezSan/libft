@@ -6,15 +6,15 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 14:30:50 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 10:25:31 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 15:10:36 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Function that scans the initial n bytes of the memory 
+// Function that scans the initial n bytes of the memory
 // area pointed to by s for the first instance of c.
-// Both c and the bytes of the memory area pointed to 
+// Both c and the bytes of the memory area pointed to
 // by s are interpreted as unsigned char.
 
 void	*ft_memchr(const void *s, int c, size_t n)

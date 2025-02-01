@@ -6,13 +6,13 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:11:22 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/31 11:39:15 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 15:14:49 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Function that sends the number 'n' to the specified file descriptor.
+// Function that sends the number 'n' to the specified file descriptor.
 
 void	ft_putnbr_fd(int n, int fd)
 {

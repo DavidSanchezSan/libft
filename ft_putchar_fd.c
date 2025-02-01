@@ -6,13 +6,13 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 12:21:09 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 12:48:08 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 15:14:13 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Function that sends the character ‘c’ to the specified file descriptor.
+// Function that sends the character ‘c’ to the specified file descriptor.
 
 void	ft_putchar_fd(char c, int fd)
 {

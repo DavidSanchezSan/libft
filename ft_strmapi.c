@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 18:33:35 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/31 20:19:21 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 17:31:32 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@
 char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 {
 	unsigned int	x;
-	char *copy;
+	char			*copy;
 
 	x = 0;
 	if (s == NULL)
 		return (NULL);
-	copy = ft_substr(s, 0, ft_strlen(s));
+	copy = ft_strdup(s);
 	if (copy == NULL)
 		return (NULL);
 	while (copy[x] != '\0')
@@ -35,16 +35,21 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	return (copy);
 }
 
+// char	ft_toupper_test(unsigned int c, char ch)
+// {
+// 	if (c % 2 == 0 && ch >= 'a' && ch <= 'z')
+// 	{
+// 		ch = ch - 32;
+// 	}
+// 	return(ch);
+// }
 
-char print_index_char(unsigned int index, char c)
-{
-    printf("Índice: %u, Carácter: %c\n", index, c);
-    return (c);
-}
-
-int main()
-{
-    char str[] = "Hola Mundo";
-    ft_strmapi(str, print_index_char); //toupper + striteri
-    return (0);
-}
+// int	main(void)
+// {
+// 	char str[] = "hola mundo";
+// 	char *copy = ft_strmapi(str, ft_toupper_test);
+// 	printf("%s\n", str);
+// 	printf("%s", copy);
+// 	free(copy);
+// 	return (0);
+// }

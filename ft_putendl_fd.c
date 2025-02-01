@@ -6,13 +6,13 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:02:36 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 13:09:14 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 15:14:27 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Function that sends the string ‘s’ to the 
+// Function that sends the string ‘s’ to the
 // specified file descriptor, followed by a jump line.
 
 void	ft_putendl_fd(char *s, int fd)

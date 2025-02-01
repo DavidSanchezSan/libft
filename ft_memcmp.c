@@ -6,13 +6,13 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:24:28 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 10:25:32 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 15:10:46 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Function that compares the first n bytes (each interpreted 
+// Function that compares the first n bytes (each interpreted
 // as unsigned char) of the memory areas s1 and s2.
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

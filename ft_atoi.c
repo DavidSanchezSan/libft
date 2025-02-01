@@ -6,14 +6,14 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 11:31:15 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 11:54:00 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 16:00:31 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Function that converts the initial portion
-// of the string pointed to by nptr to int.
+// Function that converts the initial portion of
+// the string pointed to by nptr to int.
 
 static void	ft_advance_spaces(const char *nptr, int *i)
 {

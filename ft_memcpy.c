@@ -6,13 +6,14 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:23:30 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 10:25:34 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 15:12:07 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Function that copies n bytes of memory location to another memory location.
+// Function that copies n bytes from memory area src to memory area dest.
+// The memory areas must not overlap.
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 13:31:30 by dasanche          #+#    #+#             */
-/*   Updated: 2025/01/30 10:25:14 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/01 15:08:39 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /* Function that erases the data in the n bytes of the memory starting
 at the location pointed to by s, by writing zeros (bytes containing '\0')
-to that area: */
+to that area. */
 
 void	ft_bzero(void *s, size_t n)
 {
