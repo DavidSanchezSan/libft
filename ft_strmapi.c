@@ -22,13 +22,29 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	char *copy;
 
 	x = 0;
+	if (s == NULL)
+		return (NULL);
 	copy = ft_substr(s, 0, ft_strlen(s));
 	if (copy == NULL)
 		return (NULL);
 	while (copy[x] != '\0')
 	{
-		f(x, &copy[x]);
+		copy[x] = f(x, copy[x]);
 		x++;
 	}
 	return (copy);
+}
+
+
+char print_index_char(unsigned int index, char c)
+{
+    printf("Índice: %u, Carácter: %c\n", index, c);
+    return (c);
+}
+
+int main()
+{
+    char str[] = "Hola Mundo";
+    ft_strmapi(str, print_index_char); //toupper + striteri
+    return (0);
 }
