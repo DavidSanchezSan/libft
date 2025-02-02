@@ -61,11 +61,12 @@ char	*ft_itoa(int n)
 	int		len;
 	int		temp;
 	int		is_negative;
+	char	*special_case;
 
 	temp = n;
 	len = 0;
 	is_negative = 0;
-	char * special_case = negative_special_case(&n);
+	c = negative_special_case(&n);
 	if (special_case)
 		return (special_case);
 	negative_sign(&n, &is_negative, &len, &temp);
