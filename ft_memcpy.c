@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:23:30 by dasanche          #+#    #+#             */
-/*   Updated: 2025/02/01 15:12:07 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/04 15:59:51 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,4 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 //     return 0;
 // }
-// if (src == dest) Done because of Paco.
+// Control line: if (src == dest) {return (dest)} Done because of Paco.

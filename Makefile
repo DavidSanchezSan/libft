@@ -34,8 +34,15 @@ SRC = ft_atoi.c \
 	  ft_strtrim.c \
 	  ft_substr.c \
 	  ft_tolower.c \
-	  ft_toupper.c
+	  ft_toupper.c \
+
+SRC_BONUS = ft_lstnew.c \
+			ft_lstadd_front.c \
+
 OBJ = $(SRC:.c=.o)
+
+OBJ_BONUS = $(SRC_BONUS:.c=.o)
+
 
 # "All" as the default target to build the library:
 all: $(NAME)
@@ -43,6 +50,9 @@ all: $(NAME)
 #Rules to create a static library:
 $(NAME): $(OBJ)
 	ar -rcs $@ $^
+
+bonus:  $(OBJ) $(OBJ_BONUS)
+	ar -rcs $(NAME) $^
 
 # ar rcs $@ $^ is the command to create the static library.
 # r: Insert object files into the archive.
@@ -69,7 +79,7 @@ fclean: clean
 re: fclean all
 
 #Default rule:
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
 #We use PHONY to ensure that make ALWAYS execute the rules, even if there are files called clean, fclean or re...
 
 #The command to create the library will be make.
