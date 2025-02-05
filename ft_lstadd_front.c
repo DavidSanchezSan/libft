@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 18:33:24 by dasanche          #+#    #+#             */
-/*   Updated: 2025/02/04 20:29:57 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/05 13:50:11 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,22 +35,17 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 // 	b = ft_lstnew("b");
 // 	c = ft_lstnew("c");
 // 	d = ft_lstnew("d");
-	
+
 // 	printf("Lista: %p\n", lista);
 // 	printf("a: %p\n", a);
 // 	printf("b: %p\n", b);
 // 	printf("c: %p\n", c);
 // 	printf("d: %p\n", d);
-	
+
 // 	ft_lstadd_front(&lista, a);
 // 	ft_lstadd_front(&lista, b);
 // 	ft_lstadd_front(&lista, c);
 // 	ft_lstadd_front(&lista, d);
-
-// 	(*lst).content
-// 	lst->content
-
-// 	(int*)*	a;
 
 // 	printf("%s -> %s -> %s -> %s -> %s -> %p\n",
 // 		(char *) lista->content,
@@ -60,4 +55,5 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 // 		(char *) lista->next->next->next->next->content,
 // 		lista->next->next->next->next->next
 // 	);
+// 	return(0);
 // }
