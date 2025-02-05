@@ -1,38 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/04 17:07:39 by dasanche          #+#    #+#             */
-/*   Updated: 2025/02/05 19:35:00 by dasanche         ###   ########.fr       */
+/*   Created: 2025/02/05 17:03:25 by dasanche          #+#    #+#             */
+/*   Updated: 2025/02/05 19:54:55 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Create a new node using mallocc. The member variable ‘content’ is initialised
-// with the contents of the parameter ‘content’. The variable ‘next’, with NULL.
+// It takes as parameter a node ‘lst’ and frees the memory of the content using
+// the function ‘del’ given as parameter, in addition to freeing the node. The
+// memory of the ‘next’ must not be freed.
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	t_list	*new_node;
-
-	new_node = malloc(sizeof(*new_node));
-	if (!new_node)
-		return (NULL);
-	new_node->content = content;
-	new_node->next = NULL;
-	return (new_node);
+	if (lst && del && lst->content)
+	{
+		del(lst->content);
+		free(lst);
+		lst = NULL;
+	}
 }
+
+// void	nada(void *ptr)
+// {
+// 	(void)ptr;
+// }
 
 // int	main(void)
 // {
 // 	char *a;
 
-// 	a = "   a  ";
+// 	a = "abc";
 // 	t_list *ejemplo;
 // 	ejemplo = ft_lstnew((void *)a);
-// 	printf("%s",(char *)ejemplo->content);
+// 	printf("%s\n",(char *)ejemplo->content);
+// 	ft_lstdelone(ejemplo, nada);
 // }
