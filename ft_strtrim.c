@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 16:37:26 by dasanche          #+#    #+#             */
-/*   Updated: 2025/02/01 15:18:02 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/07 15:44:15 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 // Strips all characters of a string ‘set’ from the beginning and from the end
 // of ‘s1’, until a character not belonging to ‘set’ is found. The resulting
-// string is debhelved with a malloc reservation.
+// string is returned with a malloc reservation.
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
