@@ -6,7 +6,7 @@
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 11:33:44 by dasanche          #+#    #+#             */
-/*   Updated: 2025/02/07 14:08:42 by dasanche         ###   ########.fr       */
+/*   Updated: 2025/02/07 15:36:50 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,3 +41,36 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (lst_new);
 }
+
+// void	*ft_plus(void *str)
+// {
+// 	char	*s;
+// 	int		i;
+
+// 	i = 0;
+// 	s = (char *)str;
+// 	while(s[i])
+// 	{
+// 		s[i]++;
+// 		i++;
+// 	}
+// 	return(str);
+// }
+
+// int main(void)
+// {
+//     t_list *list = ft_lstnew(ft_strdup("AAA"));
+// 	t_list *p;
+// 	ft_lstadd_front(&list, ft_lstnew(ft_strdup("BBB")));
+// 	ft_lstadd_front(&list, ft_lstnew(ft_strdup("CCC")));
+//     ft_lstmap(list, ft_plus, free);
+// 	p = list;
+// 	while (p != NULL)
+// 	{
+// 		ft_putstr_fd((char *)p->content, 1);
+// 		ft_putchar_fd('\n', 1);
+// 		p = p->next;
+// 	}
+// 	ft_lstclear(&list, free);
+//     return (0);
+// }
