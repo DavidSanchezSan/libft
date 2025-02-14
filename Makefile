@@ -16,9 +16,12 @@ SRC = ft_atoi.c \
 	  ft_memmove.c \
 	  ft_memset.c \
 	  ft_putchar_fd.c \
+	  ft_putchar_int_fd.c \
 	  ft_putendl_fd.c \
 	  ft_putnbr_fd.c \
+	  ft_putnbr_int_fd.c \
 	  ft_putstr_fd.c \
+	  ft_putstr_int_fd.c \
 	  ft_split.c \
 	  ft_strchr.c \
 	  ft_strdup.c \
@@ -56,10 +59,13 @@ all: $(NAME)
 
 #Rules to create a static library:
 $(NAME): $(OBJ)
-	ar -rcs $@ $^
+	ar -rcs $(NAME) $(OBJ)
+#	ar -rcs $@ $^
 
-bonus:  $(OBJ) $(OBJ_BONUS)
-	ar -rcs $(NAME) $^
+#bonus:  $(OBJ) $(OBJ_BONUS)
+#	ar -rcs $(NAME) $^
+bonus:	OBJ += $(OBJ_BONUS)
+bonus: $(OBJ_BONUS) $(NAME)
 
 # ar rcs $@ $^ is the command to create the static library.
 # r: Insert object files into the archive.

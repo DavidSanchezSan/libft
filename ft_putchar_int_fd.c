@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putchar_int_fd.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/30 12:51:44 by dasanche          #+#    #+#             */
-/*   Updated: 2025/02/14 11:17:49 by dasanche         ###   ########.fr       */
+/*   Created: 2025/02/14 11:41:22 by dasanche          #+#    #+#             */
+/*   Updated: 2025/02/14 11:46:04 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Function that sends the string ‘s’ to the specified file descriptor.
+// Function that sends the character ‘c’ to the specified file descriptor and
+// returns the number of characters printed.
 
-void	ft_putstr_fd(char *s, int fd)
+int	ft_putchar_int_fd(char c, int fd)
 {
-	int	count;
-
-	count = 0;
-	while (s[count] != '\0')
-	{
-		write (fd, &s[count], 1);
-		count++;
-	}
+	write(fd, &c, 1);
+	return (1);
 }
 
 // int	main(void)
 // {
-// 	char str[] = "user_exe";
-// 	ft_putstr_fd(str, 1);
+// 	char c = 'b';
+// 	printf("%d",ft_putchar_int_fd(c,1));
 // 	return (0);
 // }
