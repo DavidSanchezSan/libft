@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_hex_low_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dasanche <dasanche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/05 18:24:17 by dasanche          #+#    #+#             */
-/*   Updated: 2025/02/05 19:45:28 by dasanche         ###   ########.fr       */
+/*   Created: 2025/02/28 11:56:38 by dasanche          #+#    #+#             */
+/*   Updated: 2025/02/28 11:58:07 by dasanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Deletes and frees the given ‘lst’ node and all consecutive nodes of that
-// node, using the ‘del’ and free function. At the end, the pointer to the list
-// must be NULL.
-
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+// Function that prints a number as hexadecimal in lower characters
+int	ft_hex_low_fd(unsigned long n, int fd)
 {
-	t_list	*temp;
+	char	*c;
+	int		count;
 
-	if (!lst)
-		return ;
-	if (*lst)
+	c = "0123456789abcdef";
+	count = 0;
+	if (n > 15)
 	{
-		while (*lst)
-		{
-			temp = (*lst)->next;
-			ft_lstdelone(*lst, del);
-			*lst = temp;
-		}
-		*lst = NULL;
+		count += ft_hex_low_fd(n / 16, fd);
+		write(fd, &c[n % 16], 1);
+		count++;
 	}
+	else
+	{
+		write(fd, &c[n], 1);
+		count += 1;
+	}
+	return (count);
 }

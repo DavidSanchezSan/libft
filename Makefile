@@ -20,6 +20,7 @@ SRC = ft_atoi.c \
 	  ft_putendl_fd.c \
 	  ft_putnbr_fd.c \
 	  ft_putnbr_int_fd.c \
+	  ft_putnbr_unint_fd.c \
 	  ft_putstr_fd.c \
 	  ft_putstr_int_fd.c \
 	  ft_split.c \
@@ -38,6 +39,10 @@ SRC = ft_atoi.c \
 	  ft_substr.c \
 	  ft_tolower.c \
 	  ft_toupper.c \
+	  ft_printf.c \
+	  ft_hex_low_fd.c \
+	  ft_hex_upp_fd.c \
+	  ft_ptr_fd.c \
 
 SRC_BONUS = ft_lstnew_bonus.c \
 			ft_lstadd_front_bonus.c \
